@@ -18,7 +18,14 @@
         
       </p>
     </div>
+    <div id="footer">
+      <button class="btn" onclick="openFile();">Open</button>
+    </div>
   </body>
+  <script>
+   var remote = require('remote'); 
+   var dialog = remote.require('dialog'); 
+  </script>
   <script src="scripts/index.js"></script>
-  <script src="https://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20%3D%202487889&format=json&callback=callbackFunction"></script>
+<!--   <script src="http://api.openweathermap.org/data/2.5/forecast/city?q=santamonica&APPID=04df67653af1210c19cc9736a51e25b1"></script> -->
 </html>
